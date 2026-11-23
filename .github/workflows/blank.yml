@@ -1,8 +1,11 @@
   name: Hello World
-  on: workflow_dispatch
+  on: push
   jobs:
     build:
       runs-on: ubuntu-latest
       steps:
         - name: Build step
-
+          run: |
+           echo "hello, var name : ${{ vars.MY_NAME}}"
+           echo "secret docker password ${{secrets.DOCKER_PASSWORD}}"
+   
