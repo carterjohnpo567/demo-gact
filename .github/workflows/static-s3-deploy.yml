@@ -1,0 +1,14 @@
+  name: Env demo
+  on: workflow_dispatch
+  env:
+    APP_ENV: "Dev"
+  jobs:
+    env_demo: 
+      env: 
+       APP_ENV: "dev"
+      runs-on: ubuntu-latest
+      steps:
+        - name: connecting to env
+          env:
+            APP_ENV: "Prod"
+          run: echo "app is deployed on $APP_ENV"
