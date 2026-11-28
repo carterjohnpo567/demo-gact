@@ -5,4 +5,7 @@
       runs-on: ubuntu-latest
       steps:
         - name: hello step
-          run: echo "welcome to github acrtions"
+          run: |
+            echo "welcome to github acrtions"
+            echo "this is other workflow"
+          
