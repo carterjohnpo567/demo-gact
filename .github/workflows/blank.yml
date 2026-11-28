@@ -1,9 +1,9 @@
-  name: Hello World
+  name: sample-workflow
   on: push
   jobs:
     build:
       runs-on: ubuntu-latest
       steps:
-        - name: Build step
-          run: echo "A demo builds"
+        - name: Build steps
+          run: echo " a demo build"
    
