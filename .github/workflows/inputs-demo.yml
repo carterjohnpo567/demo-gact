@@ -11,4 +11,4 @@
       runs-on: ubuntu-latest
       steps:
         - name: inputs-steps-demo
-          run: echo "Deploying the app to ${{ inputs.environment }}
+          run: echo "Deploying the app to ${{ inputs.environment }}"
