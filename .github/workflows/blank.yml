@@ -1,10 +1,8 @@
-  name: GitHub Action Demo
-  on: push
+  name: hello world
+  on: workflow_dispatch
   jobs:
-    action-demo:
+    hello:
       runs-on: ubuntu-latest
       steps:
-        - name: Checkout the code
-          uses: actions/checkout@v4
-        - name: print index.html file
-          run: cat index.html
+        - name: hello step
+          run: echo " welcome to github acrtions
