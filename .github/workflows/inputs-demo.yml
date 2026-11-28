@@ -1,7 +1,7 @@
   name: inputs0demo 
   on: 
    workflow_dispatch:
-     inputs:
+    inputs:
        environment: 
          description: Choose the environment to deploy
          required: true
@@ -11,7 +11,7 @@
            - dev
            - test
            - prod
-        artifact_tag: 
+     artifact_tag: 
           description: choose the git tag to deploy
           required: true
   jobs:
